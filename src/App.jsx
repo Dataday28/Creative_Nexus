@@ -1,33 +1,37 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [images, setImages] = useState([]);
+
+  const fetchEvents = async() => {
+
+    const response = await fetch(`https://api.artic.edu/api/v1/artworks/search?query[term][is_public_domain]=true&fields=image_id&page=2`);
+    const data = await response.json();
+    const event = data.data;
+
+    setImages(event);
+    
+    console.log(event);
+
+  }
+
+  useEffect(() => {
+    fetchEvents();
+  }, []);
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <h1>Gallery</h1>
+
+      <section>
+
+        {images.map(image => (<img src={`https://www.artic.edu/iiif/2/${image.image_id}/full/200,/0/default.jpg`} />))}
+
+      </section>
+      
     </>
   )
 }

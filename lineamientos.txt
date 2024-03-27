@@ -1,0 +1,21 @@
+- Hook reusables
+Se debe implementar al menos 1 hook 
+El nombre debe ser claro y conciso
+
+- Zustand
+Se debe utilizar como manejador de estado global
+Debe contener5 al menos 2 stores para guardar la informacion
+
+- Routing
+Debe implementar al menos 3 rutas
+React Router debe ser utilizado
+
+- Formularios
+Debe contener al menos 1 formulario y su respectivo manejo de errores
+
+- Deploy a servidor
+- testing
+
+https://www.artic.edu/iiif/2/2d484387-2509-5e8e-2c43-22f9981972eb/full/843,/0/default.jpg 
+
+https://www.artic.edu/iiif/2/e966799b-97ee-1cc6-bd2f-a94b4b8bb8f9/full/843,/0/default.jpg
