@@ -1,0 +1,30 @@
+.header {
+    background-color: #a4c7c7;
+    color: #5a384d;
+    padding: 25px;
+    width: 1230px;
+    display: inline-block;
+}
+
+.headerTitle {
+    display: flex;
+    justify-content: start;
+    font-size: 2.5rem;
+}
+
+.barra {
+    flex: 1;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.lista {
+    align-items: center;
+    margin-right: 20px;
+}
+
+.contenido {
+    color: #5a384d;
+    text-decoration: none;
+}

@@ -4,11 +4,13 @@ import Gallery from "../pages/gallery"
 import Video from "../pages/video"
 import Subscribe from "../pages/subscribe"
 import About from "../pages/about"
+import Error404 from "../pages/error404"
 
 const router = createBrowserRouter([
     {
         path: '/',
-        element: <Home />
+        element: <Home />,
+        errorElement: <Error404 />
     },
     {
         path: '/gallery',

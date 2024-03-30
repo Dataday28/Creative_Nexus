@@ -1,0 +1,12 @@
+.flex_container {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.flex_item {
+    flex-grow: 1;
+    width: 400px;
+    height: 380px;
+    
+}
