@@ -1,0 +1,27 @@
+.flex_container {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.flex_item {
+    flex-grow: 1;
+    width: 400px;
+    height: 380px;
+}
+
+.containerText {
+    width: 400px;
+    align-items: center;
+}
+
+.title {
+    margin-bottom: 0;
+    color: #5a384d;
+    text-align:inherit;
+}
+
+.subtitle {
+    margin-top: 0;
+    color: #865473;
+}
