@@ -1,12 +1,39 @@
-.flex_container {
+.pagination {
+    list-style-type: none;
     display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
-.flex_item {
-    flex-grow: 1;
-    width: 400px;
-    height: 380px;
-    
+.page {
+    font-size: 20px;
+    padding: 0 8px;
+    cursor: pointer;
+    color: #5a384d;
+    font-weight: 400;
+}
+
+.previous,
+.next {
+    font-size: 24px;
+    cursor: pointer;
+    color: #865473;
+}
+
+.previous {
+    margin-left: 8px;
+}
+
+.next {
+    margin-left: 8px;
+}
+
+.activePage {
+    background-color: #cfb5925b;
+    color: #800450;
+    border-radius: 20px;
+
+}
+.break {
+    color: #865473;
 }

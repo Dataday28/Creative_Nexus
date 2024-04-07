@@ -1,15 +1,26 @@
 import { useState, useEffect } from "react";
+import styles from "./styles.module.css"
 import NavBar from "../../components/Navbar";
 import Footer from "../../components/Footer"
 import Events from "../../components/Events";
 import useApis from "../../hooks/useApis";
+import ReactPaginate from "react-paginate";
 
 const Gallery = () => {
-    const {events, isLoading, error, fetchArt} = useApis()
+    const {events, isLoading, error, page, fetchArt} = useApis()
 
     useEffect(() => {
         fetchArt();
     }, []);
+
+    const handlePageClick = ({selected}) => {
+        fetchArt(`&page=${selected + 1}`)
+
+        window.scrollTo({
+            top: 0,
+            behavior: "instant"
+        });
+    }
 
     const renderEvents = () => {
         if (isLoading) {
@@ -23,6 +34,22 @@ const Gallery = () => {
         return (
             <div>
                 <Events events = {events} />
+                <ReactPaginate
+                    className = {styles.pagination}
+                    nextClassName = {styles.next}
+                    previousClassName = {styles.previous}
+                    pageClassName = {styles.page}
+                    activeClassName = {styles.activePage}
+                    breakClassName={styles.break}
+                    
+                    breakLabel="|"
+                    nextLabel = ">"
+                    onPageChange = {handlePageClick}
+                    pageRangeDisplayed = {2}
+                    pageCount = {83}
+                    previousLabel = "<"
+                    renderOnZeroPageCount={null}
+                />
             </div>
         )
     }
