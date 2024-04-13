@@ -1,13 +1,14 @@
-import { useState, useEffect } from "react";
+import { useCallback, useEffect, useRef } from "react";
 import styles from "./styles.module.css"
 import NavBar from "../../components/Navbar";
 import Footer from "../../components/Footer"
 import Events from "../../components/Events";
 import useApis from "../../hooks/useApis";
 import ReactPaginate from "react-paginate";
+import useStateManage from "../../state/useStateManage";
 
 const Gallery = () => {
-    const {events, isLoading, error, page, fetchArt} = useApis()
+    const {events, isLoading, error, fetchArt} = useApis();
 
     useEffect(() => {
         fetchArt();
@@ -20,7 +21,7 @@ const Gallery = () => {
             top: 0,
             behavior: "instant"
         });
-    }
+    };
 
     const renderEvents = () => {
         if (isLoading) {
