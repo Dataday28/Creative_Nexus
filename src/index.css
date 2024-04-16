@@ -18,7 +18,7 @@ a:hover {
 }
 
 body {
-  background-color: rgb(204, 202, 202);
+  background-color: white;
   margin: 0;
   display: flex;
   place-items: center;

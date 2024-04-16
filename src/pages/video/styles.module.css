@@ -1,0 +1,39 @@
+.title {
+    font-weight: 100;
+    color: #79355ff2;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(79, 98, 148);
+}
+
+.infoContainer {
+    background-image: url('../../assets/art7.jpg');
+    background-size: 1290px 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fdfdfd;
+    text-align: center;
+    padding: 100px 0;
+    margin-bottom: 15px;
+}
+
+.info {
+    font-size: 2rem;
+}
+
+.videosContainer {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    width: 90%;
+    margin: 10px auto;
+    max-width: 1200px;
+    
+}
+
+.video {
+    flex-grow: 1;
+    width: 600px;
+    height: 400px
+}

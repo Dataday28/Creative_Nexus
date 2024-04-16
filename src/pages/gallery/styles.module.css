@@ -1,18 +1,32 @@
-.imgContainer {
-    background-size: 1290px 200px;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: #fff;
-    text-align: center;
-    padding: 100px 0;
-}
-
 .title {
     font-weight: 100;
     color: #79355ff2;
     text-align: center;
     padding-bottom: 10px;
     border-bottom: 1px solid rgb(79, 98, 148);
+}
+
+.infContainer {
+    background-image: url('../../assets/art2.jpg');
+    background-size: 1290px 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+    margin-bottom: 15px;
+}
+
+.info {
+    font-size: 2rem;
+}
+
+.loading {
+    color: #5a384d;
+}
+
+.error {
+    color: #5a384d;
 }
 
 .pagination {

@@ -72,3 +72,18 @@
 .btnSub:hover {
     background: #d6e3ec83;
 }
+
+.container {
+    background-image: url('../../assets/art3.jpg');
+    background-size: 1290px 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+    margin-bottom: 15px;
+}
+
+.parrafo {
+    font-size: 1.5rem;
+}

@@ -27,4 +27,10 @@
 .contenido {
     color: #5a384d;
     text-decoration: none;
+    font-size: 18px;
+}
+
+.contenido:hover {
+    color: #b95f97;
+    font-size: 17px;
 }

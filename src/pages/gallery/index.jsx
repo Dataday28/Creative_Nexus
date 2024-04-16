@@ -25,11 +25,11 @@ const Gallery = () => {
 
     const renderEvents = () => {
         if (isLoading) {
-            return <h2>Cargando Imagenes...</h2>
+            return <h2 className={styles.loading}>Cargando Imagenes...</h2>
         }
 
         if (error) {
-            return <h2>Ha ocurrido un error</h2>
+            return <h2 className={styles.error}>Ha ocurrido un error</h2>
         }
 
         return (
@@ -58,7 +58,13 @@ const Gallery = () => {
     return (
         <>
             <NavBar />
+
             <h1 className={styles.title}>Gallery</h1>
+
+            <div className={styles.infContainer}>
+                <p className={styles.info}>Feel free to explore and enjoy the following artworks.</p>
+            </div>
+
             {renderEvents()}
 
             <Footer />

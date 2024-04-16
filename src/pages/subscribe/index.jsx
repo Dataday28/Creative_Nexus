@@ -109,6 +109,9 @@ const Subscribe = () => {
             <NavBar />
 
             <h1 className={styles.title}>Subscribe</h1>
+            <div className={styles.container}>
+                <p className={styles.parrafo}>You can subscribe to our newsletter to receive a weekly email with information about upcoming exhibitions.</p>
+            </div>
             {renderForm()}
 
             <Footer />
