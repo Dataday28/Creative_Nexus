@@ -58,12 +58,12 @@ const Gallery = () => {
     return (
         <>
             <NavBar />
-            <h1>Gallery</h1>
+            <h1 className={styles.title}>Gallery</h1>
             {renderEvents()}
 
             <Footer />
         </>
-        )
+    )
 }
 
 export default Gallery;
