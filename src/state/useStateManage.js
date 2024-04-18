@@ -1,3 +1,4 @@
+import ReactPaginate from "react-paginate";
 import { create } from "zustand";
 
 const useStateManage = create((set) => ({
@@ -17,7 +18,9 @@ const useStateManage = create((set) => ({
         } catch(error) {
             await set(() => ({ error }));
         }
-    },
+        
+    }
+
 }));
 
 export default useStateManage;

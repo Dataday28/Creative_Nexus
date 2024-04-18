@@ -24,7 +24,7 @@
 }
 
 .btnApi {
-    margin-right: 50px;
+
     background-color: #d4d6ea;
     color: #1a1a1a;
     padding: 10px 20px;
@@ -33,7 +33,7 @@
 }
 
 .btnWeb {
-    margin-left: 50px;
+    margin-left: 20px;
     background-color: #d4d6ea;
     color: #1a1a1a;
     padding: 10px 20px;
@@ -41,12 +41,17 @@
     text-decoration: none;
 }
 
-.btnApi:hover {
+.btnSpot {
+    margin-left: 30px;
+    background-color: #d4d6ea;
+    color: #1a1a1a;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.btnApi:hover, .btnWeb:hover, .btnSpot:hover {
     background-color: #bcbfdf;
     color: #79355ff2;
 }
 
-.btnWeb:hover {
-    background-color: #bcbfdf;
-    color: #79355ff2;
-}

@@ -1,0 +1,12 @@
+.btnSpoti {
+    background-color: #0f5648;
+    color: #05b390;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.btnSpoti:hover {
+    background-color: #124d41;
+    color: #147e69;
+}

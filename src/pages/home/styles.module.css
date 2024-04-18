@@ -30,4 +30,37 @@
     text-decoration: none;
 }
 
+.btn:hover {
+    background-color: #bcbfdf;
+    color: #79355ff2;
+}
 
+.msc {
+    background-image: url('../../assets/mus2.jpg');
+    background-size: 900px 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+    margin-bottom: 5px;
+}
+
+.parrMsc{
+    color: #ffffff;
+    font-size: 23px;
+    font-weight:bold;
+}
+
+.btnSpoti {
+    background-color: #0f5648;
+    color: #05b390;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.btnSpoti:hover {
+    background-color: #124d41;
+    color: #147e69;
+}

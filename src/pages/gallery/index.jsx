@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef } from "react";
+import { useEffect } from "react";
 import styles from "./styles.module.css"
 import NavBar from "../../components/Navbar";
 import Footer from "../../components/Footer"
@@ -6,6 +6,7 @@ import Events from "../../components/Events";
 import useApis from "../../hooks/useApis";
 import ReactPaginate from "react-paginate";
 import useStateManage from "../../state/useStateManage";
+import SpotIcon from "../../components/SpotIcon";
 
 const Gallery = () => {
     const {events, isLoading, error, fetchArt} = useApis();
@@ -58,8 +59,8 @@ const Gallery = () => {
     return (
         <>
             <NavBar />
-
-            <h1 className={styles.title}>Gallery</h1>
+            
+            <h1 className={styles.title}>Gallery </h1>
 
             <div className={styles.infContainer}>
                 <p className={styles.info}>Feel free to explore and enjoy the following artworks.</p>
