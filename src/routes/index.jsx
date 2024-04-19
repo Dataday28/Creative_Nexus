@@ -5,12 +5,17 @@ import Video from "../pages/video"
 import Subscribe from "../pages/subscribe"
 import About from "../pages/about"
 import Error404 from "../pages/error404"
+import Detail from "../pages/detail";
 
 const router = createBrowserRouter([
     {
         path: '/',
         element: <Home />,
         errorElement: <Error404 />
+    },
+    {
+        path: '/detail/:eventId',
+        element: <Detail />
     },
     {
         path: '/gallery',

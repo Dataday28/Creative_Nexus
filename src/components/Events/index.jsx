@@ -8,6 +8,7 @@ const Events = ({events}) => {
         return events.map((eventitem) => (
             <EventItem 
                 key={`event-item-${eventitem.id}`}
+                id={eventitem.id}
                 img = {`https://www.artic.edu/iiif/2/${eventitem.image_id}/full/400,/0/default.jpg`}
                 title = {eventitem.title}
                 subtitle = {eventitem.artist_display}

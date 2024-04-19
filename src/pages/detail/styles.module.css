@@ -1,0 +1,51 @@
+.img_container {
+    margin-top: 8px;
+    display:flex;
+}
+
+.artDetails {
+    margin-left: 20px;
+}
+
+.artistTitle {
+    font-weight: 100;
+    color: #79355ff2;
+    padding-top: 20px;
+}
+
+.artInfo {
+    display: grid;
+    grid-template-columns: max-content auto;
+    color: #5a384d;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.artdt {
+    font-weight: bold;
+    border-top: 1px solid rgb(79, 98, 148);
+}
+
+.artdd {
+    border-top: 1px solid rgb(79, 98, 148);
+}
+
+.detail_container {
+    display: inline-block;
+}
+
+.arttTitle {
+    font-weight: 100;
+    color: #79355ff2;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(79, 98, 148);
+}
+
+.artDesc {
+    font-weight: 100;
+    color: #5a384d;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(79, 98, 148);
+}

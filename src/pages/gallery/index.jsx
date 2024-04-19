@@ -47,7 +47,7 @@ const Gallery = () => {
                     breakLabel="|"
                     nextLabel = ">"
                     onPageChange = {handlePageClick}
-                    pageRangeDisplayed = {2}
+                    pageRangeDisplayed = {5}
                     pageCount = {83}
                     previousLabel = "<"
                     renderOnZeroPageCount={null}

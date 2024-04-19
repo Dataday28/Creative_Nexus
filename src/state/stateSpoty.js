@@ -12,7 +12,7 @@ const useStateSpoty = create((set) => ({
             const options = {
                 method: 'GET',
                 headers: {
-                    'X-RapidAPI-Key': '06d3aa3f6cmsh2dd4f96605a02cap14e06bjsn8e6e2f60712a',
+                    'X-RapidAPI-Key': '4b60895480msh9db91b21399a30ap16668bjsn14eaf35cfb7f',
                     'X-RapidAPI-Host': 'spotify23.p.rapidapi.com'
                 }
             };

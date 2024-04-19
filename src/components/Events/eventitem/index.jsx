@@ -1,11 +1,12 @@
+import { Link } from "react-router-dom";
 import styles from "./styles.module.css"
 
-const EventItem = ({img, title, subtitle}) => {
+const EventItem = ({ id, img, title, subtitle}) => {
 
     return (
         <div className={styles.flex_container}>
             <div className={styles.containerImages}>
-                <img className={styles.flex_item} src={img} />
+                <Link to={`/detail/${id}`}><img className={styles.flex_item} src={img} /></Link>
             </div>
             <div className={styles.containerText}>
                 <h3 className={styles.title}>{title}</h3>

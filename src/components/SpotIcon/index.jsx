@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import useStateSpoty from "../../state/stateSpoty";
 import styles from "./styles.module.css"
 
@@ -6,13 +5,14 @@ const SpotIcon = () => {
     const {dataSpoty, fetchSpoty} = useStateSpoty();
     const playlist = dataSpoty.uri || [];
     
-    useEffect(() => {
+    const handleClick = () => {
         fetchSpoty();
-    }, [])
+    }
 
     return(
         <>
-            <a href={playlist} className={styles.btnSpoti}>▶</a>
+            <button onClick={handleClick} className={styles.btnSpoti}> <a href={playlist} className={styles.btnplay}>▶</a></button>
+            
         </>
     )
 
