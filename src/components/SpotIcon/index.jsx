@@ -1,19 +1,35 @@
+import {  useState } from "react";
 import useStateSpoty from "../../state/stateSpoty";
 import styles from "./styles.module.css"
 
 const SpotIcon = () => {
+    const [ activo, setActivo ] = useState(false);
     const {dataSpoty, fetchSpoty} = useStateSpoty();
     const playlist = dataSpoty.uri || [];
-    
-    const handleClick = () => {
-        fetchSpoty();
+
+    const handleClick = (e) => {
+        e.preventDefault();
+        fetchSpoty()
+
+        if(activo === false) {
+            setActivo(true)
+        } else {
+            setActivo(false)
+        }
+        
     }
+    
 
     return(
-        <>
-            <button onClick={handleClick} className={styles.btnSpoti}> <a href={playlist} className={styles.btnplay}>▶</a></button>
+        <div>
+            <div>
+                <button onClick={handleClick}>See the playlist</button>
+            </div>
+            <div className={styles.cont}>
+                {activo && (<a href={dataSpoty.uri ? dataSpoty.uri : 'https://open.spotify.com/playlist/70GOtPdEBvGeg90cBJc6QO'} target="_blank" onClick={() => setActivo(false)} className={styles.btnplay}>▶</a>)}
+            </div>
             
-        </>
+        </div>
     )
 
 }

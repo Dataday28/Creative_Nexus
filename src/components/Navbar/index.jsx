@@ -1,4 +1,3 @@
-import SpotIcon from '../SpotIcon';
 import styles from './styles.module.css'
 
 const NavBar = () => {

@@ -5,8 +5,6 @@ import Footer from "../../components/Footer"
 import Events from "../../components/Events";
 import useApis from "../../hooks/useApis";
 import ReactPaginate from "react-paginate";
-import useStateManage from "../../state/useStateManage";
-import SpotIcon from "../../components/SpotIcon";
 
 const Gallery = () => {
     const {events, isLoading, error, fetchArt} = useApis();

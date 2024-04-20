@@ -36,7 +36,7 @@ const Detail = () => {
             <NavBar />
 
             <div className={styles.img_container}>
-                <img src={`https://www.artic.edu/iiif/2/${artData.image_id}/full/843,/0/default.jpg`} />
+                <img src={`https://www.artic.edu/iiif/2/${artData.image_id}/full/843,/0/default.jpg`} alt={artData.title} />
                 
                 <div className={styles.artDetails}>
                     <h1 className={styles.artistTitle}>{artData.artist_display}</h1>

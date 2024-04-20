@@ -5,13 +5,19 @@
     border-radius: 10px;
 }
 
-.btnplay {
-    text-decoration: none;
-    background-color: #0f5648;
-    color: #05b390;
+.cont {
+    margin-top: 10px;
 }
 
-.btnSpoti:hover {
-    background-color: #124d41;
-    color: #147e69;
+.btnplay {
+    text-decoration: none;
+    background-color: #87d3b1;
+    color: #5db08b;
+    border-radius: 10px;
+    padding: 8px 15px;
+}
+
+.btnplay:hover {
+    background-color: #6fd1a5;
+    color: #45a57a;
 }

@@ -1,12 +1,14 @@
 
 
 .title {
+    color: #5a384d;
     font-size: 56px;
     font-weight: 500;
     margin: 0;
 }
 
 .description {
+    color: #5a384d;
     font-size: 28px;
     margin: 0;
 }

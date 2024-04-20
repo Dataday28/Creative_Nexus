@@ -15,7 +15,7 @@
     display: block;
     text-align: center;
     line-height: 2;
-    color: #5a384d;
+    color: #8f4a73;
     font-size: 20px;
 }
 
@@ -49,7 +49,7 @@
 
 .btnClear {
     background: #98b3c587;
-    color: #5a384d;
+    color: #8f4a73;
     display: flex;
     margin-right: 120px;
     font-size: 18px;
@@ -58,7 +58,7 @@
 
 .btnSub {
     background: #98b3c587;
-    color: #5a384d;
+    color: #8f4a73;
     display: flex;
     margin-left: 10px;
     font-size: 18px;

@@ -7,7 +7,7 @@ const Footer = () => {
     return (
         <div>
             <footer className={styles.footer}>
-                <p >Don't forget that we've selected some music for you to enjoy during your tour.</p>
+                <p className={styles.parr}>Don't forget that we've selected some music for you to enjoy during your tour.</p>
                 <SpotIcon />
                 <p className={styles.parr}>© 2024 Creative Nexus. All rights reserved</p>
             </footer>

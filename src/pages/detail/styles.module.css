@@ -1,6 +1,7 @@
 .img_container {
     margin-top: 8px;
     display:flex;
+    color: #8f4a73;
 }
 
 .artDetails {
@@ -16,7 +17,7 @@
 .artInfo {
     display: grid;
     grid-template-columns: max-content auto;
-    color: #5a384d;
+    color: #8f4a73;
     justify-content: center;
     padding-top: 40px;
 }
@@ -44,7 +45,7 @@
 
 .artDesc {
     font-weight: 100;
-    color: #5a384d;
+    color: #8f4a73;
     text-align: center;
     padding-bottom: 10px;
     border-bottom: 1px solid rgb(79, 98, 148);
