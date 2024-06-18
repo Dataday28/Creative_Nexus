@@ -6,7 +6,17 @@
 }
 
 .cont {
-    margin-top: 10px;
+    margin-top: 15px;
+}
+
+.btn_see {
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 12px;
+    background: #524e4e;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0.1em 0.1em #000;
 }
 
 .btnplay {
@@ -15,9 +25,21 @@
     color: #5db08b;
     border-radius: 10px;
     padding: 8px 15px;
+    box-shadow: 0.1rem 0.1rem #69b492;
+}
+
+.btn_see:hover {
+    transform: translate(-0.06em, -0.05em);
+    box-shadow: 0.15em 0.15em #000;
+    color: #e2e2e2;
 }
 
 .btnplay:hover {
     background-color: #6fd1a5;
     color: #45a57a;
+}
+
+.btn_see:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em #000;
 }

@@ -1,19 +1,20 @@
 .header {
     background-color: #cfb5925b;
     color: #8f4a73;
-    padding: 25px;
-    width: 1230px;
-    display: inline-block;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    margin-bottom: 0;
 }
 
 .headerTitle {
     display: flex;
     justify-content: start;
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 
 .barra {
-    flex: 1;
     list-style: none;
     display: flex;
     justify-content: flex-end;
@@ -27,10 +28,12 @@
 .contenido {
     color: #8f4a73;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.5rem;
+    transition: 0.5s;
 }
 
 .contenido:hover {
     color: #b95f97;
-    font-size: 17px;
+    font-size: 1.6rem;
+    transition: 0.5s;
 }

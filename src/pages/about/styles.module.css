@@ -1,26 +1,28 @@
 .title {
     font-weight: 100;
+    font-size: 4rem;
     color: #79355ff2;
     text-align: center;
     padding-bottom: 10px;
     border-bottom: 1px solid rgb(79, 98, 148);
+    margin: 1rem;
 }
 
 .content {
     background-image: url('../../assets/art4.jpg');
-    background-size: 1290px 600px;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     color: #fff;
     text-align: center;
     padding: 100px 0;
-    margin-bottom: 5px;
+    margin: 1rem;
 }
 
 .parr{
     color: #ffffff;
     padding-bottom: 10px;
-    font-size: 1.8rem;
+    font-size: 2.5rem;
 }
 
 .btnApi {
@@ -53,5 +55,6 @@
 .btnApi:hover, .btnWeb:hover, .btnSpot:hover {
     background-color: #bcbfdf;
     color: #79355ff2;
+    transition: 1s;
 }
 

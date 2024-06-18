@@ -23,7 +23,7 @@ const SpotIcon = () => {
     return(
         <div>
             <div>
-                <button onClick={handleClick}>See the playlist</button>
+                <button onClick={handleClick} className={styles.btn_see}>See the playlist</button>
             </div>
             <div className={styles.cont}>
                 {activo && (<a href={dataSpoty.uri ? dataSpoty.uri : 'https://open.spotify.com/playlist/70GOtPdEBvGeg90cBJc6QO'} target="_blank" onClick={() => setActivo(false)} className={styles.btnplay}>▶</a>)}
