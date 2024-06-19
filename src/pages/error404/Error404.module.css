@@ -1,14 +1,22 @@
-
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10rem;
+    gap: 1rem;
+}
 
 .title {
     color: #5a384d;
-    font-size: 56px;
-    font-weight: 500;
+    font-size: clamp(2rem, 4vw, 4rem);
+    font-weight: bold;
     margin: 0;
+    text-align: center;
 }
 
 .description {
     color: #5a384d;
-    font-size: 28px;
+    font-size: clamp(1rem, 4vw, 2rem);
     margin: 0;
+    text-align: center;
 }

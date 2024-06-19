@@ -5,3 +5,10 @@
     margin: 1rem;
 }
 
+@media (min-width: 320px) {
+    .flex_container {
+        margin: auto;
+        justify-content: center;
+    }
+}
+

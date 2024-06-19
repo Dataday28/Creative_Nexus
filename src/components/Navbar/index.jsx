@@ -7,7 +7,7 @@ const NavBar = () => {
         <div className={styles.header}>
                 <h1 className={styles.headerTitle}>Creative Nexus</h1>
                 
-                <nav>
+                <nav className={styles.nav}>
                     <ul className={styles.barra}>
                         
                         <li className={styles.lista}><a className={styles.contenido} href="/">Home</a></li>

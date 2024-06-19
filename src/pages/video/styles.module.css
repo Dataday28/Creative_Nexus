@@ -36,3 +36,31 @@
     width: 600px;
     height: 400px
 }
+
+@media (min-width: 320px) {
+    .videosContainer {
+        flex-direction: column;
+        gap: 10px;
+        margin: 0.5rem;
+        align-items:center
+    }
+
+    .video {
+        width: 310px;
+        height: 200px
+    }
+}
+
+@media (min-width: 768px) {
+    .video {
+        width: 600px;
+        height: 400px
+    }
+}
+
+@media (min-width: 1024px) {
+    .videosContainer {
+        flex-direction: row;
+        margin: 1rem 7rem;
+    }
+}
